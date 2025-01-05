@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Night Message</title>
+    <style>
+        #message {
+            display: none; /* Hide the message initially */
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    // Function to prompt the user and reveal the message
+    window.onload = function() {
+        var userAnswer = "";
+
+        // Loop until the user provides an answer
+        while (true) {
+            userAnswer = prompt("What's your name?");
+            
+            if (userAnswer === null) {
+                alert("You cancelled, huh? 🥺🥺");
+            } else if (userAnswer.trim() === "") {
+                alert("Baaka, answer it! 😜");
+            } else {
+                // Show the hidden message if the user answers the prompt
+                alert("SO You’re " + userAnswer + " 😱😱");
+                document.getElementById("message").style.display = "block";
+                break; // Exit the loop after getting a valid answer
+            }
+        }
+    }
+</script>
+
+<!-- Hidden message initially -->
+<div id="message">
+    Good night, my theodore . As the stars light up the sky, I’m reminded that there’s no beauty more enchanting than your soul. Every moment spent with you is like a dream that I never want to wake up from. Tonight, as you close your eyes, know that you’re the last thought on my mind and the first one that fills my heart when I wake. You are the quiet peace in my soul, the warmth in my heart, and the dream I’ll carry with me forever. Sleep well, my precious, for you are the most beautiful thing I’ll ever hold in my heart.sleep welll my fav human 
+</div>
+
+</body>
+</html>
